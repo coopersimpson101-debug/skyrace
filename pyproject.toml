@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skyrace"
+version = "0.1.0"
+description = "Autonomous FPV racing for the skyforge-fc flight controller: CNN gate detection, PnP + EKF, minimum-snap, MPC, CRSF companion link"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "the skyrace authors" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: C",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Robotics",
+]
+keywords = ["drone racing", "minimum snap", "MPC", "CRSF", "quadrotor", "computer vision"]
+
+[project.optional-dependencies]
+serial = ["pyserial>=3.5"]
+figures = ["matplotlib>=3.7", "pillow>=10"]
+dev = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/coopersimpson101-debug/skyrace"
+Repository = "https://github.com/coopersimpson101-debug/skyrace"
+Issues = "https://github.com/coopersimpson101-debug/skyrace/issues"
+Changelog = "https://github.com/coopersimpson101-debug/skyrace/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+include = ["skyrace*"]
+
+[tool.setuptools.package-data]
+"skyrace.vision" = ["weights/*.npz"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

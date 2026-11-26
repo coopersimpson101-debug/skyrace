@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "skyrace: autonomous FPV drone racing for the skyforge-fc flight controller"
+type: software
+authors:
+  - name: "the skyrace authors"
+license: MIT
+repository-code: "https://github.com/coopersimpson101-debug/skyrace"
+version: 0.1.0
+date-released: "2026-11-26"
+keywords:
+  - drone racing
+  - minimum snap
+  - model predictive control
+  - gate detection
+  - CRSF
+  - robotics

@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+*.dll
+*.so
+*.dylib
+*.pdb
+*.lib
+results/hero_run.npz

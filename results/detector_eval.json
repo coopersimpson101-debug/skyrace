@@ -1,0 +1,69 @@
+{
+ "n_images": 600,
+ "heldout_textures": [
+  6,
+  7
+ ],
+ "machine": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD, Windows",
+ "date": "2026-11-26",
+ "methods": {
+  "cnn": {
+   "corner_recall_4px": 0.914,
+   "corners_labelled": 1837,
+   "median_px_err": 0.896,
+   "p90_px_err": 1.743,
+   "false_pos_per_image": 0.182,
+   "gates_evaluated": 247,
+   "pnp_success": 0.7935,
+   "pnp_pos_err_median_m": 1.9433,
+   "pnp_pos_err_p90_m": 6.6883,
+   "ms_per_frame": 57.5,
+   "pnp_by_distance": {
+    "0-4 m": {
+     "n": 14,
+     "pos_err_median_m": 0.206,
+     "range_err_median_m": 0.036
+    },
+    "4-8 m": {
+     "n": 80,
+     "pos_err_median_m": 1.038,
+     "range_err_median_m": 0.156
+    },
+    "8-12 m": {
+     "n": 80,
+     "pos_err_median_m": 2.836,
+     "range_err_median_m": 0.289
+    }
+   }
+  },
+  "classical": {
+   "corner_recall_4px": 0.5716,
+   "corners_labelled": 1837,
+   "median_px_err": 0.97,
+   "p90_px_err": 1.987,
+   "false_pos_per_image": 0.408,
+   "gates_evaluated": 247,
+   "pnp_success": 0.7733,
+   "pnp_pos_err_median_m": 1.0976,
+   "pnp_pos_err_p90_m": 5.0786,
+   "ms_per_frame": 131.3,
+   "pnp_by_distance": {
+    "0-4 m": {
+     "n": 20,
+     "pos_err_median_m": 0.168,
+     "range_err_median_m": 0.105
+    },
+    "4-8 m": {
+     "n": 84,
+     "pos_err_median_m": 0.752,
+     "range_err_median_m": 0.258
+    },
+    "8-12 m": {
+     "n": 68,
+     "pos_err_median_m": 2.068,
+     "range_err_median_m": 0.544
+    }
+   }
+  }
+ }
+}
