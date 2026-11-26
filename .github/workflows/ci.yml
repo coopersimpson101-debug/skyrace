@@ -19,8 +19,8 @@ jobs:
     env:
       OPENBLAS_NUM_THREADS: "2"
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python }}
       - run: pip install -e ".[dev]"
@@ -32,12 +32,12 @@ jobs:
     env:
       OPENBLAS_NUM_THREADS: "2"
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7
         with:
           repository: coopersimpson101-debug/skyforge-fc
           path: skyforge-fc
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: pip install -e ".[dev]"
@@ -51,8 +51,8 @@ jobs:
     name: relative links + script syntax
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: python scripts/check_links.py
